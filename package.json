@@ -1,0 +1,21 @@
+{
+  "name": "device",
+  "version": "1.0.0",
+  "description": "* Студент: [Анатолий  Дегтярь](https://htmlacademy.ru/profile/antd). * Наставник: `Неизвестно`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "lint:html": "linthtml source/*.html --config .linthtmlrc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.10.1",
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "linthtml-config-htmlacademy": "^1.0.25",
+    "stylelint": "^16.14.1",
+    "stylelint-config-htmlacademy": "^4.2.3"
+  }
+}
