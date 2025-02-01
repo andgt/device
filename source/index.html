@@ -8,9 +8,147 @@
     <base href="img/">
   </head>
   <body>
-    <header></header>
+    <header class="page-header">
+      <div class="main-logo">
+        <a class="main-logo__link">
+          <img class="main-logo__img" src="#" width="" height="" alt="Логотип компании.">
+        </a>
+      </div>
+      <form class="search-form" action="#" method="#">
+        <label class="visually-hidden" for="input-search">Поиск по сайту</label>
+        <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска">
+        <button class="search-form__button" type="button">Найти</button>
+      </form>
+      <ul class="top-menu">
+        <li class="top-menu__item">
+          <a class="top-menu__link" href="#">Войти</a>
+        </li>
+        <li class="top-menu__item">
+          <a class="top-menu__link" href="#">Сравнить</a>
+        </li>
+        <li class="top-menu__item">
+          <a class="top-menu__link" href="#">Корзина</a>
+        </li>
+      </ul>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Гарантия</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <h1>Интернет-магазин гаджетов</h1>
+      <h1 class="visually-hidden">Интернет-магазин гаджетов</h1>
+      <div class="slider">
+        <div class="slider__item">
+          <p>Порхает как бабочка, жалит как пчела!</p>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a href="#">Подробнее</a>
+          <img src="#" width="" height="" alt="Фото квадрокоптера.">
+          <dl class="spec-list">
+            <div class="spec-list__wrapper">
+              <dt class="spec-list__term">800 м</dt>
+              <dd class="spec-list__def">Дальность полета</dd>
+            </div>
+            <div class="spec-list__wrapper">
+              <dt class="spec-list__term">50 м</dt>
+              <dd class="spec-list__def">Радиус поражения</dd>
+            </div>
+          </dl>
+        </div>
+        <button class="slider__toggle slider__toggle-left" type="button"><span class="visually-hidden">Левый переключатель слайдера</span></button>
+        <button class="slider__toggle slider__toggle-right" type="button"><span class="visually-hidden">Правый переключатель слайдера</span></button>
+        <div class="slider__checkbox">
+          <ul class="slider__checkbox-list">
+            <li class="slider__checkbox-item">
+              <label class="visually-hidden" for="checkbox-toggle-left">Переключить на первый слайд</label>
+              <input class="checkbox-toggle checkbox-toggle-left" type="radio" name="checkbox-toggle" id="checkbox-toggle-left">
+            </li>
+            <li class="slider__checkbox-item">
+              <label class="visually-hidden" for="checkbox-toggle-right">Переключить на второй слайд</label>
+              <input class="checkbox-toggle checkbox-toggle-right" type="radio" name="checkbox-toggle" id="checkbox-toggle-right">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <div class="wrapper">
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__link">
+                <img class="catalog__img" src="#" width="" height="" alt="Изображение очков для виртуальной реальности.">
+                <h3 class="catalog__title">Виртуальная реальность</h3>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link">
+                <img class="catalog__img" src="#" width="" height="" alt="Изображение монопода для селфи.">
+                <h3 class="catalog__title">Моноподы для селфи</h3>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link">
+                <img class="catalog__img" src="#" width="" height="" alt="Изображение экшн-камеры.">
+                <h3 class="catalog__title">Экшн-камеры</h3>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link">
+                <img class="catalog__img" src="#" width="" height="" alt="Изображение фитнес-браслета.">
+                <h3 class="catalog__title">Фитнес-браслеты</h3>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link">
+                <img class="catalog__img" src="#" width="" height="" alt="Изображение умных часов.">
+                <h3 class="catalog__title">Умные часы</h3>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link">
+                <img class="catalog__img" src="#" width="" height="" alt="Изображение квадрокоптера.">
+                <h3 class="catalog__title">Квадрокоптеры</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="delivery">
+        <div class="container">
+          <div class="delivery__main">
+            <ul class="delivery-options">
+              <li class="delivery-options__item">
+                <button class="delivery-options__tab" type="button">Доставка</button>
+              </li>
+              <li class="delivery-options__item">
+                <button class="delivery-options__tab" type="button">Гарантия</button>
+              </li>
+              <li class="delivery-options__item">
+                <button class="delivery-options__tab" type="button">Кредит</button>
+              </li>
+            </ul>
+            <div class="wrapper">
+              <h2>Доставка</h2>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+          </div>
+          <div class="delivery__option">
+            <p>Доставим редкий товар под заказ</p>
+            <span class="tooltip"></span>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
