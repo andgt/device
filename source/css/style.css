@@ -1,0 +1,17 @@
+.tabs__inner--delivery {
+	background-image: url('../img/index-tab-1.svg');
+	background-size: 136px 165px;
+	background-repeat: no-repeat;
+}
+
+.tabs__inner--warranty {
+	background-image: url('../img/index-tab-2.svg');
+	background-size: 171px 195px;
+	background-repeat: no-repeat;
+}
+
+.tabs__inner--credit {
+	background-image: url('../img/index-tab-3.svg');
+	background-size: 156px 189px;
+	background-repeat: no-repeat;
+}
