@@ -223,3 +223,107 @@
 .social-list {
   list-style: none;
 }
+
+.user-menu__list {
+  list-style: none;
+}
+
+.user-menu__link {
+  font-size: 18px;
+  line-height: 30px;
+  background-color: transparent;
+  opacity: 30%;
+  border: 0;
+}
+
+.breadcrumbs__link {
+  font-size: 16px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs__link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog__title {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.catalog__subtitle {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.range-slider___price {
+  font-size: 15px;
+  line-height: 18px;
+  opacity: 30%;
+}
+
+.form-filters__button {
+  background-color: transparent;
+  border: 0;
+}
+
+.form-filters__label {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.sorting__select {
+  font-size: 18px;
+  line-height: 30px;
+  border: 0;
+  background-color: transparent;
+}
+
+.card__price {
+  line-height: 21px;
+}
+
+.catalog__button-more {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+}
+
+.pagination {
+  background-color: #ebebeb;
+}
+
+.pagination__list {
+  list-style: none;
+}
+
+.pagination__link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+  opacity: 30%;
+}
+
+.pagination__button {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 0;
+}
