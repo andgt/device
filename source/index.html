@@ -9,7 +9,7 @@
     <link rel="preload" href="fonts/rubik/rubik-700.woff2" as="font" type="font/woff2">
     <link rel="preload" href="fonts/raleway/raleway-800.woff2" as="font" type="font/woff2">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
       <div class="main-logo">
         <a class="main-logo__link" href="#">
@@ -22,42 +22,42 @@
         <button class="search-form__button" type="button">Найти</button>
       </form>
       <ul class="top-menu">
-        <li class="top-menu__item">
+        <li>
           <a class="top-menu__link" href="#">Войти</a>
         </li>
-        <li class="top-menu__item">
+        <li>
           <a class="top-menu__link" href="#">Сравнить</a>
         </li>
-        <li class="top-menu__item">
+        <li>
           <a class="top-menu__link" href="#">Корзина</a>
         </li>
       </ul>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li>
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a class="main-nav__link" href="#">Доставка</a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a class="main-nav__link" href="#">Гарантия</a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a class="main-nav__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <h1 class="visually-hidden">Интернет-магазин гаджетов</h1>
       <div class="slider">
         <div class="slider__wrapper">
           <div class="slider__item">
-            <p>Порхает как бабочка, жалит как пчела!</p>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a href="#">Подробнее</a>
-            <img src="img/slider-1.png" width="560" height="560" alt="Фото квадрокоптера.">
+            <p class="slider__main-text">Порхает как бабочка, жалит как пчела!</p>
+            <p class="main__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="slider__link" href="#">Подробнее</a>
+            <img class="slider__img" src="img/slider-1.png" width="560" height="560" alt="Фото квадрокоптера.">
             <dl class="spec-list">
               <div class="spec-list__wrapper">
                 <dt class="spec-list__term">800 м</dt>
@@ -70,10 +70,10 @@
             </dl>
           </div>
           <div class="slider__item">
-            <p>Худеем правильно!</p>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a href="#">Подробнее</a>
-            <img src="img/slider-2.png" width="560" height="560" alt="Фото квадрокоптера.">
+            <p class="slider__main-text">Худеем правильно!</p>
+            <p class="main__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="slider__link" href="#">Подробнее</a>
+            <img class="slider__img" src="img/slider-2.png" width="560" height="560" alt="Фото квадрокоптера.">
             <dl class="spec-list">
               <div class="spec-list__wrapper">
                 <dt class="spec-list__term">48 часов</dt>
@@ -82,10 +82,10 @@
             </dl>
           </div>
           <div class="slider__item">
-            <p>Делай селфи, как Бен Стиллер!</p>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-            <a href="#">Подробнее</a>
-            <img src="img/slider-3.png" width="560" height="560" alt="Фото квадрокоптера.">
+            <p class="slider__main-text">Делай селфи, как Бен Стиллер!</p>
+            <p class="main__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            <a class="slider__link" href="#">Подробнее</a>
+            <img class="slider__img" src="img/slider-3.png" width="560" height="560" alt="Фото квадрокоптера.">
             <dl class="spec-list">
               <div class="spec-list__wrapper">
                 <dt class="spec-list__term">8,5 м</dt>
@@ -166,38 +166,38 @@
           <div class="delivery__main">
             <ul class="delivery-options">
               <li class="delivery-options__item">
-                <button class="delivery-options__tab" type="button">Доставка</button>
+                <button class="delivery-options__button main__interactive-elem" type="button">Доставка</button>
               </li>
               <li class="delivery-options__item">
-                <button class="delivery-options__tab" type="button">Гарантия</button>
+                <button class="delivery-options__button main__interactive-elem" type="button">Гарантия</button>
               </li>
               <li class="delivery-options__item">
-                <button class="delivery-options__tab" type="button">Кредит</button>
+                <button class="delivery-options__button main__interactive-elem" type="button">Кредит</button>
               </li>
             </ul>
             <div class="tabs">
               <div class="tabs__item">
                 <section class="tabs__inner tabs__inner--delivery">
-                  <h2 class="tabs__title">Доставка</h2>
-                  <p class="tabs__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                  <h2 class="main__title">Доставка</h2>
+                  <p class="main__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </section>
               </div>
               <div class="tabs__item">
                 <section class="tabs__inner tabs__inner--warranty">
-                  <h2 class="tabs__title">Гарантия</h2>
-                  <p class="tabs__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                  <h2 class="main__title">Гарантия</h2>
+                  <p class="main__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
                 </section>
               </div>
               <div class="tabs__item">
                 <section class="tabs__inner tabs__inner--credit">
-                  <h2 class="tabs__title">Кредит</h2>
-                  <p class="tabs__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                  <h2 class="main__title">Кредит</h2>
+                  <p class="main__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
                 </section>
               </div>
             </div>
           </div>
           <a class="delivery-link__option" href="#">
-            <h3>Доставим редкий товар под заказ</h3>
+            <h3 class="delivery-link__title">Доставим редкий товар под заказ</h3>
             <span class="tooltip">
               <img src="img/delivery-option-2.svg" width="41" height="40" alt="Иконка информационного блока.">
             </span>
@@ -207,24 +207,18 @@
       <section class="information">
         <h2 class="visually-hidden">Подробная информация о интернет-магазине</h2>
         <div class="about">
-          <h3 class="information__title">О нас</h3>
+          <h3 class="main__title">О нас</h3>
           <p class="information__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="information__text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
           <ul class="delivery__list">
-            <li class="delivery__item">
-              <strong>Меловые линии</strong>
-            </li>
-            <li class="delivery__item">
-              <strong>СДИК</strong>
-            </li>
-            <li class="delivery__item">
-              <strong>ТоксБерри</strong>
-            </li>
+            <li class="delivery__item">Меловые линии</li>
+            <li class="delivery__item">СДИК</li>
+            <li class="delivery__item">ТоксБерри</li>
           </ul>
-          <a class="about__link" href="#">Подробнее о нас</a>
+          <a class="information__link main__interactive-elem" href="#">Подробнее о нас</a>
         </div>
         <div class="contacts">
-          <h3 class="information__title">Контакты</h3>
+          <h3 class="main__title">Контакты</h3>
           <p class="information__text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
           <div class="contacts__inner">
             <h4 class="contacts__title">Интернет-магазин «Девайс»</h4>
@@ -240,18 +234,19 @@
               <li class="contacts-schedule-item">сб—вс: с <time datetime="T10:00">10:00</time> до <time datetime="T19:00">19:00</time></li>
             </ul>
           </div>
+          <a class="information__link main__interactive-elem" href="#">Напишите нам</a>
         </div>
       </section>
       <article class="mailing">
         <div class="mailing__inner">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <h2 class="main__title">Подпишитесь на рассылку</h2>
+          <p class="main__text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
         <form class="form-mailing" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="input-mailing">Оформить подписку</label>
           <input id="input-mailing" type="text" name="mailing" placeholder="Ваш e-mail">
-          <button class="mailing__button" type="button">Подписаться</button>
-          <span class="mailing__add-info">Это бесплатно</span>
+          <button class="mailing__button main__interactive-elem" type="button">Подписаться</button>
+          <span class="mailing__add-info main__text">Это бесплатно</span>
         </form>
       </article>
     </main>
@@ -265,17 +260,17 @@
         </address>
         <ul class="footer-menu__list">
           <li class="footer-menu__item">
-            <a class="footer-menu__link" href="#">Доставка</a>
+            <a class="footer-menu__link main__interactive-elem" href="#">Доставка</a>
           </li>
           <li class="footer-menu__item">
-            <a class="footer-menu__link" href="#">Гарантия</a>
+            <a class="footer-menu__link main__interactive-elem" href="#">Гарантия</a>
           </li>
           <li class="footer-menu__item">
-            <a class="footer-menu__link" href="#">Контакты</a>
+            <a class="footer-menu__link main__interactive-elem" href="#">Контакты</a>
           </li>
         </ul>
         <address class="address">
-          <a class="address__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <a class="address__phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </address>
       </div>
       <div class="footer__inner">
