@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page-html" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,45 +11,47 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="main-logo">
-        <a class="main-logo__link" href="#">
-          <img class="main-logo__img" src="img/logo.svg" width="145" height="37" alt="Логотип компании.">
-        </a>
-      </div>
-      <form class="search-form" action="#" method="#">
-        <label class="visually-hidden" for="input-search">Поиск по сайту</label>
-        <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска">
-        <button class="search-form__button" type="button">Найти</button>
-      </form>
-      <ul class="top-menu">
-        <li>
-          <a class="top-menu__link" href="#">Войти</a>
-        </li>
-        <li>
-          <a class="top-menu__link" href="#">Сравнить</a>
-        </li>
-        <li>
-          <a class="top-menu__link" href="#">Корзина</a>
-        </li>
-      </ul>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
+      <div class="container page-header__container">
+        <div class="main-logo">
+          <a class="main-logo__link" href="#">
+            <img class="main-logo__img" src="img/logo.svg" width="145" height="37" alt="Логотип компании.">
+          </a>
+        </div>
+        <form class="search-form" action="#" method="#">
+          <label class="visually-hidden" for="input-search">Поиск по сайту</label>
+          <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска">
+          <button class="search-form__button" type="button">Найти</button>
+        </form>
+        <ul class="top-menu">
           <li>
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            <a class="top-menu__link" href="#">Войти</a>
           </li>
           <li>
-            <a class="main-nav__link" href="#">Доставка</a>
+            <a class="top-menu__link" href="#">Сравнить</a>
           </li>
           <li>
-            <a class="main-nav__link" href="#">Гарантия</a>
-          </li>
-          <li>
-            <a class="main-nav__link" href="#">Контакты</a>
+            <a class="top-menu__link" href="#">Корзина</a>
           </li>
         </ul>
-      </nav>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li>
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li>
+              <a class="main-nav__link" href="#">Доставка</a>
+            </li>
+            <li>
+              <a class="main-nav__link" href="#">Гарантия</a>
+            </li>
+            <li>
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class="main">
+    <main class="main-container">
       <h1 class="visually-hidden">Интернет-магазин гаджетов</h1>
       <div class="slider">
         <div class="slider__wrapper">
