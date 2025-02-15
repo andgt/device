@@ -125,6 +125,7 @@
 }
 
 .main__text {
+  margin: 0;
   color: #444444;
 }
 
@@ -152,7 +153,13 @@
   background-image: linear-gradient(to bottom, #ffe17f 15%, #ffffff 15% 100%);
 }
 
+.slider__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .slider__main-text {
+  margin: 0;
   font-family: 'Raleway', 'Arial', sans-serif;
   font-size: 50px;
   font-weight: 800;
@@ -183,6 +190,10 @@
 }
 
 .catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -197,36 +208,57 @@
   line-height: 24px;
 }
 
-.delivery-options {
+.delivery__main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.delivery-options__button {
+.tabs__button {
   background-color: transparent;
   border: 0;
 }
 
-.tabs__inner--delivery {
+.info-block__inner--delivery {
   background-image: url('../img/index-tab-1.svg');
   background-size: 136px 165px;
   background-repeat: no-repeat;
 }
 
-.tabs__inner--warranty {
+.info-block__inner--warranty {
   background-image: url('../img/index-tab-2.svg');
   background-size: 171px 195px;
   background-repeat: no-repeat;
 }
 
-.tabs__inner--credit {
+.info-block__inner--credit {
   background-image: url('../img/index-tab-3.svg');
   background-size: 156px 189px;
   background-repeat: no-repeat;
 }
 
+.delivery-link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .delivery-link__title {
   font-size: 20px;
   line-height: 23px;
+}
+
+.information__container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .information__text {
@@ -243,8 +275,18 @@
   text-decoration: none;
 }
 
+.mailing__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer {
   background-color: #444444;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .address__text {
@@ -254,6 +296,10 @@
 }
 
 .footer-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -269,6 +315,10 @@
 }
 
 .social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
