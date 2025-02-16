@@ -25,6 +25,20 @@
     url("../fonts/rubik/rubik-700.woff2") format("woff2");
 }
 
+
+*, *::before, ::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  font-size: 0;
+}
+
 .page-html {
   height: 100%;
 }
@@ -44,7 +58,7 @@
   background-color: #ffffff;
 }
 
-.main-container {
+.main {
   flex-grow: 1;
 }
 
@@ -53,11 +67,13 @@
   margin: 0 auto;
 }
 
-.page-header {
+.page-header__container {
+  display: flex;
+  flex-wrap: wrap;
   background-image: linear-gradient(to bottom, #ffffff 15%, #ffe17f 15% 100%);
 }
 
-.page-header__container {
+.page-header__inner {
   display: flex;
   flex-wrap: wrap;
 }
@@ -67,7 +83,7 @@
 }
 
 .search-form {
-  font-weight: 519px;
+  width: 517px;
 }
 
 .top-menu {
@@ -109,6 +125,9 @@
 }
 
 .top-menu {
+  width: 241px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -122,6 +141,10 @@
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
+}
+
+.main__title--catalog {
+  margin: 0 0 16px 0;
 }
 
 .main__text {
@@ -149,7 +172,7 @@
   text-decoration: none;
 }
 
-.slider {
+.slider__container {
   background-image: linear-gradient(to bottom, #ffe17f 15%, #ffffff 15% 100%);
 }
 
@@ -192,6 +215,7 @@
 .catalog__list {
   display: flex;
   flex-wrap: wrap;
+  gap: 44px 40px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -287,6 +311,7 @@
 .footer__container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .address__text {
@@ -323,6 +348,10 @@
 }
 
 .user-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -339,6 +368,11 @@
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 432px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -349,7 +383,21 @@
   text-decoration: none;
 }
 
+.catalog__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 44px;
+  padding: 70px 40px 78px 40px;
+  background-color: #ffffff;
+}
+
 .catalog__title {
+  margin: 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 800;
@@ -368,6 +416,11 @@
   opacity: 30%;
 }
 
+.form-filters {
+  width: 320px;
+  background-color: #f0f0f0;
+}
+
 .form-filters__button {
   background-color: transparent;
   border: 0;
@@ -378,6 +431,17 @@
   line-height: 19px;
 }
 
+.sorting {
+  width: 840px;
+  background-color: #f0f0f0;
+}
+
+.sorting__header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+
 .sorting__select {
   font-size: 18px;
   line-height: 30px;
@@ -385,30 +449,71 @@
   background-color: transparent;
 }
 
+.sorting-up-down {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.card__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card__title {
+  width: 133px;
+  margin: 0;
+}
+
 .card__price {
   line-height: 21px;
 }
 
 .catalog__button-more {
+  width: 100%;
+  padding: 18px 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 19px;
   background-color: transparent;
   text-transform: uppercase;
-  border: 0;
+  border: 3px solid #e5e5e5;
   cursor: pointer;
 }
 
 .pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: #ebebeb;
 }
 
+.pagination__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 14px;
+}
+
 .pagination__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .pagination__link {
+  align-self: center;
   font-size: 16px;
   line-height: 20px;
   color: #444444;
@@ -417,6 +522,7 @@
 }
 
 .pagination__button {
+  padding: 25px;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -424,4 +530,5 @@
   background-color: transparent;
   text-transform: uppercase;
   border: 0;
+  cursor: pointer;
 }

@@ -51,78 +51,80 @@
         </nav>
       </div>
     </header>
-    <main class="main-container">
+    <main class="main">
       <h1 class="visually-hidden">Интернет-магазин гаджетов</h1>
       <div class="slider">
-        <div class="slider__wrapper">
-          <div class="slider__item">
-            <img class="slider__img" src="img/slider-1.png" width="560" height="560" alt="Фото квадрокоптера.">
-            <div class="slider__inner">
-              <p class="slider__main-text">Порхает как бабочка, жалит как пчела!</p>
-              <p class="main__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a class="slider__link" href="#">Подробнее</a>
-              <dl class="spec-list">
-                <div class="spec-list__wrapper">
-                  <dt class="spec-list__term">800 м</dt>
-                  <dd class="spec-list__def">Дальность полета</dd>
-                </div>
-                <div class="spec-list__wrapper">
-                  <dt class="spec-list__term">50 м</dt>
-                  <dd class="spec-list__def">Радиус поражения</dd>
-                </div>
-              </dl>
+        <div class="container slider__container">
+          <div class="slider__wrapper">
+            <div class="slider__item">
+              <img class="slider__img" src="img/slider-1.png" width="560" height="560" alt="Фото квадрокоптера.">
+              <div class="slider__inner">
+                <p class="slider__main-text">Порхает как бабочка, жалит как пчела!</p>
+                <p class="main__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <a class="slider__link" href="#">Подробнее</a>
+                <dl class="spec-list">
+                  <div class="spec-list__wrapper">
+                    <dt class="spec-list__term">800 м</dt>
+                    <dd class="spec-list__def">Дальность полета</dd>
+                  </div>
+                  <div class="spec-list__wrapper">
+                    <dt class="spec-list__term">50 м</dt>
+                    <dd class="spec-list__def">Радиус поражения</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="slider__item">
+              <img class="slider__img" src="img/slider-2.png" width="560" height="560" alt="Фото квадрокоптера.">
+              <div class="slider__inner">
+                <p class="slider__main-text">Худеем правильно!</p>
+                <p class="main__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a class="slider__link" href="#">Подробнее</a>
+                <dl class="spec-list">
+                  <div class="spec-list__wrapper">
+                    <dt class="spec-list__term">48 часов</dt>
+                    <dd class="spec-list__def">Без подзарядки</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="slider__item">
+              <img class="slider__img" src="img/slider-3.png" width="560" height="560" alt="Фото квадрокоптера.">
+              <div class="slider__inner">
+                <p class="slider__main-text">Делай селфи, как Бен Стиллер!</p>
+                <p class="main__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+                <a class="slider__link" href="#">Подробнее</a>
+                <dl class="spec-list">
+                  <div class="spec-list__wrapper">
+                    <dt class="spec-list__term">8,5 м</dt>
+                    <dd class="spec-list__def">Длина палки</dd>
+                  </div>
+                  <div class="spec-list__wrapper">
+                    <dt class="spec-list__term">5 кг</dt>
+                    <dd class="spec-list__def">Вес палки</dd>
+                  </div>
+                  <div class="spec-list__wrapper">
+                    <dt class="spec-list__term">Карбон</dt>
+                    <dd class="spec-list__def">Материал</dd>
+                  </div>
+                </dl>
+              </div>
             </div>
           </div>
-          <div class="slider__item">
-            <img class="slider__img" src="img/slider-2.png" width="560" height="560" alt="Фото квадрокоптера.">
-            <div class="slider__inner">
-              <p class="slider__main-text">Худеем правильно!</p>
-              <p class="main__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a class="slider__link" href="#">Подробнее</a>
-              <dl class="spec-list">
-                <div class="spec-list__wrapper">
-                  <dt class="spec-list__term">48 часов</dt>
-                  <dd class="spec-list__def">Без подзарядки</dd>
-                </div>
-              </dl>
-            </div>
+          <button class="slider__toggle slider__toggle-left" type="button"><span class="visually-hidden">Левый переключатель слайдера</span></button>
+          <button class="slider__toggle slider__toggle-right" type="button"><span class="visually-hidden">Правый переключатель слайдера</span></button>
+          <div class="slider__checkbox">
+            <ul class="slider__checkbox-list">
+              <li class="slider__checkbox-item">
+                <label class="visually-hidden" for="checkbox-toggle-left">Переключить на первый слайд</label>
+                <input class="checkbox-toggle checkbox-toggle-left" type="radio" name="checkbox-toggle" id="checkbox-toggle-left">
+              </li>
+              <li class="slider__checkbox-item">
+                <label class="visually-hidden" for="checkbox-toggle-right">Переключить на второй слайд</label>
+                <input class="checkbox-toggle checkbox-toggle-right" type="radio" name="checkbox-toggle" id="checkbox-toggle-right">
+              </li>
+            </ul>
           </div>
-          <div class="slider__item">
-            <img class="slider__img" src="img/slider-3.png" width="560" height="560" alt="Фото квадрокоптера.">
-            <div class="slider__inner">
-              <p class="slider__main-text">Делай селфи, как Бен Стиллер!</p>
-              <p class="main__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-              <a class="slider__link" href="#">Подробнее</a>
-              <dl class="spec-list">
-                <div class="spec-list__wrapper">
-                  <dt class="spec-list__term">8,5 м</dt>
-                  <dd class="spec-list__def">Длина палки</dd>
-                </div>
-                <div class="spec-list__wrapper">
-                  <dt class="spec-list__term">5 кг</dt>
-                  <dd class="spec-list__def">Вес палки</dd>
-                </div>
-                <div class="spec-list__wrapper">
-                  <dt class="spec-list__term">Карбон</dt>
-                  <dd class="spec-list__def">Материал</dd>
-                </div>
-              </dl>
-            </div>
-          </div>
-        </div>
-        <button class="slider__toggle slider__toggle-left" type="button"><span class="visually-hidden">Левый переключатель слайдера</span></button>
-        <button class="slider__toggle slider__toggle-right" type="button"><span class="visually-hidden">Правый переключатель слайдера</span></button>
-        <div class="slider__checkbox">
-          <ul class="slider__checkbox-list">
-            <li class="slider__checkbox-item">
-              <label class="visually-hidden" for="checkbox-toggle-left">Переключить на первый слайд</label>
-              <input class="checkbox-toggle checkbox-toggle-left" type="radio" name="checkbox-toggle" id="checkbox-toggle-left">
-            </li>
-            <li class="slider__checkbox-item">
-              <label class="visually-hidden" for="checkbox-toggle-right">Переключить на второй слайд</label>
-              <input class="checkbox-toggle checkbox-toggle-right" type="radio" name="checkbox-toggle" id="checkbox-toggle-right">
-            </li>
-          </ul>
         </div>
       </div>
       <section class="catalog">
