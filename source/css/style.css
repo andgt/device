@@ -92,6 +92,10 @@
   margin-top: 13px;
 }
 
+.page-header--catalog {
+  margin-bottom: 35px;
+}
+
 .page-header__container {
   display: flex;
   flex-wrap: wrap;
@@ -102,6 +106,13 @@
 .page-header__inner {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  column-gap: 175px;
+  width: 497px;
+}
+
+.page-header__inner--catalog {
+  column-gap: 25px;
 }
 
 .main-logo {
@@ -123,7 +134,6 @@
 .top-menu {
   display: flex;
   flex-wrap: wrap;
-  width: 497px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -828,6 +838,7 @@
 .user-menu__list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 28px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -841,13 +852,22 @@
   border: 0;
 }
 
+.breadcrumbs {
+  display: flex;
+  flex-direction: column;
+  column-gap: 16px;
+  margin-bottom: 35px;
+  padding-left: 60px;
+}
+
 .breadcrumbs__link {
   font-size: 16px;
 }
 
-.breadcrumbs {
+.breadcrumbs__list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 36px;
   width: 432px;
   margin: 0;
   padding: 0;

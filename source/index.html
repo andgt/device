@@ -22,20 +22,21 @@
           <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска">
           <button class="search-form__button" type="button">Найти</button>
         </form>
-        <ul class="top-menu">
-          <li class="top-menu__item top-menu__item--login">
-            <a class="top-menu__link top-menu__link--login" href="#">Войти</a>
+        <div class="page-header__inner">
+          <a class="top-menu__link top-menu__link--login" href="#">Войти</a>
+          <ul class="top-menu">
+            <li class="top-menu__item top-menu__item--compare">
+              <a class="top-menu__link top-menu__link--compare" href="#">Сравнить</a>
+            </li>
+            <li class="top-menu__item top-menu__item--cart">
+              <a class="top-menu__link top-menu__link--cart" href="#">
+                <span class="top-menu__cart-counter">2</span>
+                <span>Корзина</span>
+              </a>
+            </li>
+          </ul>
           </li>
-          <li class="top-menu__item top-menu__item--compare">
-            <a class="top-menu__link top-menu__link--compare" href="#">Сравнить</a>
-          </li>
-          <li class="top-menu__item top-menu__item--cart">
-            <a class="top-menu__link top-menu__link--cart" href="#">
-              <span class="top-menu__cart-counter">2</span>
-              <span>Корзина</span>
-            </a>
-          </li>
-        </ul>
+        </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--catalog">

@@ -10,7 +10,7 @@
     <link rel="preload" href="fonts/raleway/raleway-800.woff2" as="font" type="font/woff2">
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header page-header--catalog">
       <div class="container page-header__container">
         <div class="main-logo">
           <a class="main-logo__link" href="index.html">
@@ -22,12 +22,12 @@
           <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска">
           <button class="search-form__button" type="button">Найти</button>
         </form>
-        <div class="page-header__inner">
+        <div class="page-header__inner page-header__inner--catalog">
           <ul class="user-menu__list">
             <li class="user-menu__item">
               <a class="top-menu__link" href="#">
-              <span class="visually-hidden">Ссылка на личный кабинет</span>
-              <span class="user-menu__nickname">Коля Петухов</span>
+                <span class="visually-hidden">Ссылка на личный кабинет</span>
+                <span class="user-menu__nickname">Коля Петухов</span>
               </a>
             </li>
             <li class="user-menu__item">
@@ -35,17 +35,22 @@
             </li>
           </ul>
           <ul class="top-menu">
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">Сравнить</a>
+            <ul class="top-menu">
+            <li class="top-menu__item top-menu__item--compare">
+              <a class="top-menu__link top-menu__link--compare" href="#">Сравнить</a>
             </li>
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">Корзина</a>
+            <li class="top-menu__item top-menu__item--cart">
+              <a class="top-menu__link top-menu__link--cart" href="#">
+                <span class="top-menu__cart-counter">2</span>
+                <span>Корзина</span>
+              </a>
             </li>
+          </ul>
           </ul>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--catalog">
               <a class="main-nav__link" href="#">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
@@ -65,18 +70,20 @@
       <h1 class="visually-hidden">Каталог товаров</h1>
       <section class="catalog">
         <div class="container">
-          <h2 class="main__title main__title--catalog">Моноподы для селфи</h2>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Каталог товаров</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="index.html">Моноподы для селфи</a>
-            </li>
-          </ul>
+          <div class="breadcrumbs">
+            <h2 class="main__title main__title--catalog">Моноподы для селфи</h2>
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Моноподы для селфи</a>
+              </li>
+            </ul>
+          </div>
           <div class="catalog__wrapper">
             <form class="form-filters" action="#" method="#">
               <h3 class="catalog__title">фильтр:</h3>
