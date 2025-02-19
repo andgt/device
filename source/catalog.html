@@ -10,7 +10,7 @@
     <link rel="preload" href="fonts/raleway/raleway-800.woff2" as="font" type="font/woff2">
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header page-header--catalog">
       <div class="container page-header__container">
         <div class="main-logo">
           <a class="main-logo__link" href="index.html">
@@ -22,12 +22,12 @@
           <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска">
           <button class="search-form__button" type="button">Найти</button>
         </form>
-        <div class="page-header__inner">
+        <div class="page-header__inner page-header__inner--catalog">
           <ul class="user-menu__list">
             <li class="user-menu__item">
               <a class="top-menu__link" href="#">
-              <span class="visually-hidden">Ссылка на личный кабинет</span>
-              <span class="user-menu__nickname">Коля Петухов</span>
+                <span class="visually-hidden">Ссылка на личный кабинет</span>
+                <span class="user-menu__nickname">Коля Петухов</span>
               </a>
             </li>
             <li class="user-menu__item">
@@ -35,17 +35,22 @@
             </li>
           </ul>
           <ul class="top-menu">
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">Сравнить</a>
+            <ul class="top-menu">
+            <li class="top-menu__item top-menu__item--compare">
+              <a class="top-menu__link top-menu__link--compare" href="#">Сравнить</a>
             </li>
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">Корзина</a>
+            <li class="top-menu__item top-menu__item--cart">
+              <a class="top-menu__link top-menu__link--cart" href="#">
+                <span class="top-menu__cart-counter">2</span>
+                <span>Корзина</span>
+              </a>
             </li>
+          </ul>
           </ul>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--catalog">
               <a class="main-nav__link" href="#">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
@@ -65,65 +70,69 @@
       <h1 class="visually-hidden">Каталог товаров</h1>
       <section class="catalog">
         <div class="container">
-          <h2 class="main__title main__title--catalog">Моноподы для селфи</h2>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Каталог товаров</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="index.html">Моноподы для селфи</a>
-            </li>
-          </ul>
-          <div class="catalog__wrapper">
+          <div class="breadcrumbs">
+            <h2 class="main__title main__title--catalog">Моноподы для селфи</h2>
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Моноподы для селфи</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog__wrapper">
+          <div class="container catalog__container">
             <form class="form-filters" action="#" method="#">
-              <h3 class="catalog__title">фильтр:</h3>
-              <fieldset>
-                <legend class="catalog__subtitle">Стоимость</legend>
-                <div class="form-filters__wrapper">
+              <h3 class="catalog__title catalog__title--filter">фильтр:</h3>
+              <fieldset class="form-filters__wrapper">
+                <legend class="catalog__subtitle form-filters__title">Стоимость</legend>
+                <div class="range-slider">
                   <div class="range-slider__scale">
                     <div class="range-slider__bar"></div>
                   </div>
-                  <div class="range-slider__toggle-legt">
+                  <div class="range-slider__toggle range-slider__toggle--min">
                     <span class="visually-hidden">Ползунок для выбора стартовой цены</span>
-                    <span class="range-slider___min-price range-slider___price">От 0</span>
+                    <span class="range-slider__min-price range-slider__price">От 0</span>
                   </div>
-                  <div class="range-slider__toggle-right">
+                  <div class="range-slider__toggle range-slider__toggle--max">
                     <span class="visually-hidden">Ползунок для выбора финальной цены</span>
-                    <span class="range-slider___max-price range-slider___price">До 5000</span>
+                    <span class="range-slider__max-price range-slider__price">До 5000</span>
                   </div>
                 </div>
               </fieldset>
-              <fieldset>
-                <legend class="catalog__subtitle">Цвет</legend>
-                <div class="form-filters__wrapper">
-                  <div>
+              <fieldset class="form-filters__wrapper">
+                <legend class="catalog__subtitle form-filters__title">Цвет</legend>
+                <ul class="checkbox-colors">
+                  <li class="checkbox-colors__item">
                     <label class="form-filters__label" for="color-black">Черный</label>
                     <input id="color-black" name="black" type="checkbox" checked>
-                  </div>
-                  <div>
+                  </li>
+                  <li class="checkbox-colors__item">
                     <label class="form-filters__label" for="color-white">Белый</label>
                     <input id="color-white" name="white" type="checkbox" checked>
-                  </div>
-                  <div>
+                  </li>
+                  <li class="checkbox-colors__item">
                     <label class="form-filters__label" for="color-blue">Синий</label>
                     <input id="color-blue" name="blue" type="checkbox">
-                  </div>
-                  <div>
+                  </li>
+                  <li class="checkbox-colors__item">
                     <label class="form-filters__label" for="color-red">Красный</label>
                     <input id="color-red" name="red" type="checkbox">
-                  </div>
-                  <div>
+                  </li>
+                  <li class="checkbox-colors__item">
                     <label class="form-filters__label" for="color-pink">Розовый</label>
                     <input id="color-pink" name="pink" type="checkbox">
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </fieldset>
-              <fieldset>
-                <legend class="catalog__subtitle">Bluetooth</legend>
-                <div class="form-filters__wrapper">
+              <fieldset class="form-filters__wrapper">
+                <legend class="catalog__subtitle form-filters__title">Bluetooth</legend>
+                <div>
                   <div>
                     <label class="form-filters__label" for="bluetooth-true">Есть</label>
                     <input id="bluetooth-true" name="black" type="radio" checked>
@@ -134,7 +143,7 @@
                   </div>
                 </div>
               </fieldset>
-              <button class="form-filters__button main__interactive-elem" type="submit">показать</button>
+              <button class="form-filters__button main__interactive-elem control-element" type="submit">показать</button>
             </form>
             <section class="sorting">
               <header class="sorting__header">
@@ -144,12 +153,16 @@
                   <option value="Новинки">Новинки</option>
                   <option value="Эксклюзив">Эксклюзив</option>
                 </select>
-                <ul class="sorting-up-down">
-                  <li class="sorting-up-down__item">
-                    <button class="sorting-up-down__button-up" type="button" aria-label="Сортировка от меньшего к большему"></button>
+                <ul class="sorting-arrow">
+                  <li class="sorting-arrow__item">
+                    <button class="sorting-arrow__button-up sorting-arrow__button" type="button" aria-label="Сортировка от меньшего к большему">
+                      <span class="sorting-arrow__arrow"></span>
+                    </button>
                   </li>
-                  <li class="sorting-up-down__item">
-                    <button class="sorting-up-down__button-down" type="button" aria-label="Сортировка от большего к меньшему"></button>
+                  <li class="sorting-arrow__item">
+                    <button class="sorting-arrow__button" type="button" aria-label="Сортировка от большего к меньшему">
+                      <span class="sorting-arrow__arrow sorting-arrow__arrow-down"></span>
+                    </button>
                   </li>
                 </ul>
               </header>
@@ -229,11 +242,9 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer-inner">
-          <a class="footer-logo__link" href="index.html">
-            <img class="footer-logo__img" src="img/logo-footer.svg" width="145" height="37" alt="Логотип компании.">
-          </a>
-          <address class="address">
-            <p class="address__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <img class="footer-logo__img" src="img/logo-footer.svg" width="145" height="37" alt="Логотип компании.">
+          <address class="address address--footer">
+            <p class="address__text address__text--footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
         </div>
         <div class="footer__inner">
@@ -270,9 +281,7 @@
           </section>
         </div>
         <div class="footer__inner">
-          <address class="address">
-            <a class="address__phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-          </address>
+          <a class="footer__phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a class="footer__dev-link" href="htmlacademy.ru">
             <img src="img/logo-html-academy.svg" width="115" height="33" alt="Логотип разработчика.">
           </a>
