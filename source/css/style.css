@@ -2095,11 +2095,11 @@
   outline-offset: 2px;
 }
 
-.tooltip {
+.popover {
   display: none;
 }
 
-.tooltip--active {
+.popover--active {
   display: block;
   position: absolute;
   top: 36px;
@@ -2110,7 +2110,7 @@
   z-index: 5;
 }
 
-.tooltip::before {
+.popover::before {
   content: '';
   position: absolute;
   top: -6px;
@@ -2121,13 +2121,13 @@
   transform: rotate(45deg);
 }
 
-.tooltip__card-list {
+.popover__card-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.tooltip__card-item {
+.popover__card-item {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -2135,11 +2135,11 @@
   padding: 20px;
 }
 
-.tooltip__card-item:not(:last-child) {
+.popover__card-item:not(:last-child) {
   margin-bottom: 1px;
 }
 
-.tooltip__card-item:not(:last-child)::after {
+.popover__card-item:not(:last-child)::after {
   content: '';
   position: absolute;
   left: 0;
@@ -2151,12 +2151,12 @@
   z-index: 5;
 }
 
-.tooltip__img {
+.popover__img {
   width: 39px;
   height: 43px;
 }
 
-.tooltip__product-link {
+.popover__product-link {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -2165,32 +2165,32 @@
   outline: none;
 }
 
-.tooltip__product-link:hover {
+.popover__product-link:hover {
   opacity: 60%;
 }
 
-.tooltip__product-link:active {
+.popover__product-link:active {
   opacity: 30%;
 }
 
-.tooltip__product-link:focus {
+.popover__product-link:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
-.tooltip__text {
+.popover__text {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 }
 
-.tooltip__text--title {
+.popover__text--title {
   max-width: 155px;
   margin: 0;
   font-weight: 400;
 }
 
-.tooltip__remove-btn {
+.popover__remove-btn {
   width: 10px;
   height: 10px;
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z' fill='white'/%3E%3C/svg%3E%0A");
@@ -2200,29 +2200,29 @@
   cursor: pointer;
 }
 
-.tooltip__remove-btn:hover {
+.popover__remove-btn:hover {
   opacity: 60%;
 }
 
-.tooltip__remove-btn:active {
+.popover__remove-btn:active {
   opacity: 30%;
 }
 
-.tooltip__remove-btn:focus {
+.popover__remove-btn:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
-.tooltip__wrapper {
+.popover__wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
-.tooltip__button {
+.popover__button {
   padding: 0 20px;
 }
 
-.tooltip__button-link {
+.popover__button-link {
   padding: 14px 25px;
   background-color: #ffffff;
   line-height: 22px;
