@@ -433,5 +433,45 @@
         </div>
       </div>
     </footer>
+    <div class="modal modal-overlay">
+      <div class="modal__container">
+        <header class="modal__header">
+          <h2 class="modal__title">Доставка под заказ</h2>
+          <button class="modal__btn-close">
+            <span class="visually-hidden">Кнопка закрытия модального окна</span>
+          </button>
+        </header>
+        <form class="form-modal" action="ttps://echo.htmlacademy.ru/" method="post">
+          <fieldset>
+            <label for="user-name">Ваше имя:</label>
+            <input type="text" name="user-name" id="user-name" required>
+            <span>Добавьте имя</span>
+          </fieldset>
+          <fieldset>
+            <label for="user-email">Ваш e-mail:</label>
+            <input type="e-mail" name="user-email" id="user-email" required>
+          </fieldset>
+          <fieldset>
+            <label for="description">Что нужно привезти:</label>
+            <input type="text" name="description" id="description" required>
+          </fieldset>
+          <fieldset>
+            <label for="description">Количество:</label>
+            <div class="form-modal__inner">
+              <button class="form-modal__btn-counter form-modal__btn-counter--decrease" type="button">
+                <span class="visually-hidden">Уменьшит количество на 1</span>
+              </button>
+              <input type="number" value="1" min="1" max="100" name="description" id="description" required>
+              <button class="form-modal__btn-counter form-modal__btn-counter--increase" type="button">
+                <span class="visually-hidden">Увеличить количество на 1</span>
+              </button>
+            </div>
+            <button class="main__interactive-elem" type="button">
+              <span class="tabs__text control-element">Отправить</span>
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
