@@ -32,7 +32,7 @@
                 <span class="top-menu__cart-counter">2</span>
                 <span>Корзина</span>
               </button>
-              <div class="popover popover--active">
+              <div class="popover">
                 <ul class="popover__card-list">
                   <li class="popover__card-item">
                     <a class="popover__product-link" href="#">
@@ -78,14 +78,14 @@
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--catalog">
               <button class="main-nav__link main-nav__link--catalog main-nav__link--catalog-open" type="button">Каталог товаров</button>
-              <ul class="submenu main-nav__submenu main-nav__submenu--active">
+              <ul class="submenu main-nav__submenu">
                 <li class="submenu__item">
                   <ul class="submenu submenu-inner">
                     <li class="submenu-inner__item">
                       <a class="submenu__link" href="#">Виртуальная реальность</a>
                     </li>
                     <li class="submenu-inner__item">
-                      <a class="submenu__link submenu__link--active" href="#">Моноподы для селфи</a>
+                      <a class="submenu__link" href="#">Моноподы для селфи</a>
                     </li>
                     <li class="submenu-inner__item">
                       <a class="submenu__link" href="#">Экшн-камеры</a>
@@ -112,7 +112,7 @@
               </ul>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active" href="#">Доставка</a>
+              <a class="main-nav__link" href="#">Доставка</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Гарантия</a>
@@ -433,44 +433,56 @@
         </div>
       </div>
     </footer>
-    <div class="modal modal-overlay">
-      <div class="modal__container">
-        <header class="modal__header">
-          <h2 class="modal__title">Доставка под заказ</h2>
-          <button class="modal__btn-close">
-            <span class="visually-hidden">Кнопка закрытия модального окна</span>
-          </button>
-        </header>
-        <form class="form-modal" action="ttps://echo.htmlacademy.ru/" method="post">
-          <fieldset>
-            <label for="user-name">Ваше имя:</label>
-            <input type="text" name="user-name" id="user-name" required>
-            <span>Добавьте имя</span>
-          </fieldset>
-          <fieldset>
-            <label for="user-email">Ваш e-mail:</label>
-            <input type="e-mail" name="user-email" id="user-email" required>
-          </fieldset>
-          <fieldset>
-            <label for="description">Что нужно привезти:</label>
-            <input type="text" name="description" id="description" required>
-          </fieldset>
-          <fieldset>
-            <label for="description">Количество:</label>
-            <div class="form-modal__inner">
-              <button class="form-modal__btn-counter form-modal__btn-counter--decrease" type="button">
-                <span class="visually-hidden">Уменьшит количество на 1</span>
-              </button>
-              <input type="number" value="1" min="1" max="100" name="description" id="description" required>
-              <button class="form-modal__btn-counter form-modal__btn-counter--increase" type="button">
-                <span class="visually-hidden">Увеличить количество на 1</span>
-              </button>
-            </div>
-            <button class="main__interactive-elem" type="button">
-              <span class="tabs__text control-element">Отправить</span>
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="modal__container">
+          <header class="modal__header modal__wrapper">
+            <h2 class="modal__title main__title">Доставка под заказ</h2>
+            <button class="modal__btn-close" type="button">
+              <span class="visually-hidden">Кнопка закрытия модального окна</span>
             </button>
-          </fieldset>
-        </form>
+          </header>
+          <form class="form-modal" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal__wrapper">
+              <fieldset class="form-modal__fieldset">
+                <legend class="visually-hidden">Группа полей формы</legend>
+                <label class="form-modal__label" for="user-name">Ваше имя:</label>
+                <input class="form-modal__input" type="text" name="user-name" id="user-name" placeholder="Введите имя" required>
+                <span class="form-modal__decor-icon form-modal__decor-icon--name" aria-hidden="true"></span>
+              </fieldset>
+              <fieldset class="form-modal__fieldset">
+                <legend class="visually-hidden">Группа полей формы</legend>
+                <label class="form-modal__label" for="useremail">Ваш e-mail:</label>
+                <input class="form-modal__input" type="email" pattern="^\S+@\S+\.\S+$" name="user-email" id="useremail" placeholder="Введите e-mail" disabled>
+                <span class="form-modal__decor-icon form-modal__decor-icon--mail" aria-hidden="true"></span>
+              </fieldset>
+            </div>
+            <div class="modal__wrapper">
+              <fieldset class="form-modal__fieldset">
+                <legend class="visually-hidden">Группа полей формы</legend>
+                <label class="form-modal__label" for="description">Что нужно привезти:</label>
+                <input class="form-modal__input" type="text" name="description" id="description" placeholder="В свободной форме" required>
+              </fieldset>
+              <fieldset class="form-modal__fieldset">
+                <legend class="visually-hidden">Группа полей формы</legend>
+                <label class="form-modal__label form-modal__label--counter" for="input-counter">
+                  <span>Количество:</span>
+                  <span class="form-modal__tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к&nbsp;провозу багажа.</span>
+                </label>
+                <div class="form-modal__inner-counter">
+                  <button class="form-modal__btn-counter form-modal__btn-counter--decrease" type="button">
+                    <span class="visually-hidden">Уменьшить количество на 1</span>
+                  </button>
+                  <input class="form-modal__input form-modal__input--counter" type="number" value="1" min="1" max="100" name="input-counter" id="input-counter" placeholder="1" required>
+                  <button class="form-modal__btn-counter form-modal__btn-counter--increase" type="button">
+                    <span class="visually-hidden">Увеличить количество на 1</span>
+                  </button>
+                </div>
+              </fieldset>
+            </div>
+            <button class="form-modal__btn main__interactive-elem" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>
