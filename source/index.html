@@ -15,7 +15,7 @@
         <div class="main-logo">
           <img class="main-logo__img" src="img/logo.svg" width="145" height="37" alt="Логотип компании.">
         </div>
-        <form class="search-form" action="#" method="#">
+        <form class="search-form" action="#" method="post">
           <label class="visually-hidden" for="input-search">Поиск по сайту</label>
           <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Поиск по сайту">
           <span class="search-form__icon"></span>
@@ -37,7 +37,7 @@
                   <li class="popover__card-item">
                     <a class="popover__product-link" href="#">
                       <img class="popover__img" src="img/popover-product-1.jpg" width="39" height="43" alt="Изображение любительской селфи-палки.">
-                      <h3 class="popover__text popover__text--title" target="_blank">Любительская селфи-палка</h3>
+                      <h3 class="popover__text popover__text--title">Любительская селфи-палка</h3>
                     </a>
                     <button class="popover__remove-btn" type="button">
                       <span class="visually-hidden">Кнопка для удаления товара</span>
@@ -46,7 +46,7 @@
                   <li class="popover__card-item">
                     <a class="popover__product-link" href="#">
                       <img class="popover__img" src="img/popover-product-2.jpg" width="39" height="43" alt="Изображение профессиональной селфи-палки.">
-                      <h3 class="popover__text popover__text--title" target="_blank">Профессиональная селфи-палка</h3>
+                      <h3 class="popover__text popover__text--title">Профессиональная селфи-палка</h3>
                     </a>
                     <button class="popover__remove-btn" type="button">
                       <span class="visually-hidden">Кнопка для удаления товара</span>
@@ -72,7 +72,6 @@
               </div>
             </li>
           </ul>
-          </li>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -334,8 +333,8 @@
             <div class="contacts__inner">
               <h4 class="contacts__title">Время работы</h4>
               <ul class="contacts__schedule">
-                <li class="contacts__schedule-item">пн—пт: с <time datetime="T10:00">10:00</time> до <time datetime="T22:00">22:00</time></li>
-                <li class="contacts__schedule-item">сб—вс: с <time datetime="T10:00">10:00</time> до <time datetime="T19:00">19:00</time></li>
+                <li class="contacts__schedule-item">пн—пт: с <time>10:00</time> до <time>22:00</time></li>
+                <li class="contacts__schedule-item">сб—вс: с <time>10:00</time> до <time>19:00</time></li>
               </ul>
             </div>
             <a class="information__link information__link--contacts main__interactive-elem control-element" href="#">Напишите нам</a>
