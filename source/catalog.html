@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Device</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="fonts/rubik/rubik-400.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/rubik/rubik-700.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/raleway/raleway-800.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/rubik/rubik-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/rubik/rubik-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/raleway/raleway-800.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="icon" href="favicon.ico">
   </head>
   <body class="page-body">
@@ -88,7 +88,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--catalog">
-              <button class="main-nav__link main-nav__link--catalog main-nav__link--catalog-open" type="button">Каталог товаров</button>
+              <button class="main-nav__link main-nav__link--catalog" type="button">Каталог товаров</button>
               <ul class="submenu main-nav__submenu">
                 <li class="submenu__item">
                   <ul class="submenu submenu-inner">
@@ -335,7 +335,7 @@
       <div class="container footer__container">
         <div class="footer__inner footer__inner--address">
           <a class="main-logo__link" href="#">
-            <img class="footer-logo__img" src="img/logo-footer.svg" width="145" height="37" alt="Логотип компании.">
+            <img src="img/logo-footer.svg" width="145" height="37" alt="Логотип компании.">
           </a>
           <address class="address">
             <p class="address__text address__text--footer">Санкт-Петербург,&nbsp;набережная реки Карповки, 5, литера П.</p>

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Device</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="fonts/rubik/rubik-400.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/rubik/rubik-700.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/raleway/raleway-800.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/rubik/rubik-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/rubik/rubik-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/raleway/raleway-800.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="icon" href="favicon.ico">
   </head>
   <body class="page-body">
@@ -18,7 +18,7 @@
         </div>
         <form class="search-form" action="#" method="post">
           <label class="visually-hidden" for="input-search">Поиск по сайту</label>
-          <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Поиск по сайту">
+          <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска">
           <span class="search-form__icon"></span>
           <button class="search-form__button" type="button">Найти</button>
         </form>
@@ -77,7 +77,10 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--catalog">
-              <button class="main-nav__link main-nav__link--catalog main-nav__link--catalog-open" type="button">Каталог товаров</button>
+              <span class="main-nav__link ">Каталог товаров</span>
+              <button class="main-nav__link main-nav__link--catalog" type="button">
+                <span class="visually-hidden">Кнопка раскрытия дополнительного меню</span>
+              </button>
               <ul class="submenu main-nav__submenu">
                 <li class="submenu__item">
                   <ul class="submenu submenu-inner">
@@ -185,14 +188,14 @@
             </div>
           </div>
           <div class="slider__buttons">
-            <button class="slider__toggle slider__toggle-left" type="button" disabled><span class="visually-hidden">Левый переключатель слайдера</span></button>
+            <button class="slider__toggle slider__toggle-left" type="button"><span class="visually-hidden">Левый переключатель слайдера</span></button>
             <button class="slider__toggle slider__toggle-right" type="button"><span class="visually-hidden">Правый переключатель слайдера</span></button>
           </div>
           <div class="slider__checkbox">
             <ul class="slider__checkbox-list">
               <li class="slider__checkbox-item">
                 <label class="visually-hidden" for="checkbox-toggle-1">Переключить на первый слайд</label>
-                <input class="slider__checkbox-toggle" type="radio" name="checkbox-toggle" id="checkbox-toggle-1" disabled>
+                <input class="slider__checkbox-toggle" type="radio" name="checkbox-toggle" id="checkbox-toggle-1" checked>
                 <span class="slider__checkbox-custom"></span>
               </li>
               <li class="slider__checkbox-item">
@@ -202,7 +205,7 @@
               </li>
               <li class="slider__checkbox-item">
                 <label class="visually-hidden" for="checkbox-toggle-3">Переключить на третий слайд</label>
-                <input class="slider__checkbox-toggle" type="radio" name="checkbox-toggle" id="checkbox-toggle-3" checked>
+                <input class="slider__checkbox-toggle" type="radio" name="checkbox-toggle" id="checkbox-toggle-3">
                 <span class="slider__checkbox-custom"></span>
               </li>
             </ul>
@@ -279,7 +282,7 @@
               <div class="info-block__item info-block__item--active">
                 <section class="info-block__inner info-block__inner--delivery">
                   <h2 class="info-block__title main__title">Доставка</h2>
-                  <p class="info-block__description main__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                  <p class="info-block__description main__text">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! Ведь <br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </section>
               </div>
               <div class="info-block__item">
@@ -327,7 +330,7 @@
             <div class="contacts__inner">
               <h4 class="contacts__title">Интернет-магазин «Девайс»</h4>
               <address class="address">
-                <p class="address__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <p class="address__text address__text--contacts">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                 <a class="address__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
               </address>
             </div>
@@ -346,7 +349,7 @@
         <div class="container mailing__container">
           <div class="mailing__inner">
             <h2 class="mailing__title main__title">Подпишитесь на рассылку</h2>
-            <p class="mailing__text main__text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <p class="mailing__text main__text">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
           <form class="form-mailing" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="input-mailing">Оформить подписку</label>
@@ -360,7 +363,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__inner footer__inner--address">
-          <img class="footer-logo__img main-logo__img" src="img/logo-footer.svg" width="145" height="37" alt="Логотип компании.">
+          <img class="main-logo__img" src="img/logo-footer.svg" width="145" height="37" alt="Логотип компании.">
           <address class="address">
             <p class="address__text address__text--footer">Санкт-Петербург,&nbsp;набережная реки Карповки, 5, литера П.</p>
           </address>
