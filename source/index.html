@@ -8,6 +8,7 @@
     <link rel="preload" href="fonts/rubik/rubik-400.woff2" as="font" type="font/woff2">
     <link rel="preload" href="fonts/rubik/rubik-700.woff2" as="font" type="font/woff2">
     <link rel="preload" href="fonts/raleway/raleway-800.woff2" as="font" type="font/woff2">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -15,9 +16,9 @@
         <div class="main-logo">
           <img class="main-logo__img" src="img/logo.svg" width="145" height="37" alt="Логотип компании.">
         </div>
-        <form class="search-form" action="#" method="#">
+        <form class="search-form" action="#" method="post">
           <label class="visually-hidden" for="input-search">Поиск по сайту</label>
-          <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Поиск по сайту">
+          <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска">
           <span class="search-form__icon"></span>
           <button class="search-form__button" type="button">Найти</button>
         </form>
@@ -37,7 +38,7 @@
                   <li class="popover__card-item">
                     <a class="popover__product-link" href="#">
                       <img class="popover__img" src="img/popover-product-1.jpg" width="39" height="43" alt="Изображение любительской селфи-палки.">
-                      <h3 class="popover__text popover__text--title" target="_blank">Любительская селфи-палка</h3>
+                      <h3 class="popover__text popover__text--title">Любительская селфи-палка</h3>
                     </a>
                     <button class="popover__remove-btn" type="button">
                       <span class="visually-hidden">Кнопка для удаления товара</span>
@@ -46,7 +47,7 @@
                   <li class="popover__card-item">
                     <a class="popover__product-link" href="#">
                       <img class="popover__img" src="img/popover-product-2.jpg" width="39" height="43" alt="Изображение профессиональной селфи-палки.">
-                      <h3 class="popover__text popover__text--title" target="_blank">Профессиональная селфи-палка</h3>
+                      <h3 class="popover__text popover__text--title">Профессиональная селфи-палка</h3>
                     </a>
                     <button class="popover__remove-btn" type="button">
                       <span class="visually-hidden">Кнопка для удаления товара</span>
@@ -72,12 +73,14 @@
               </div>
             </li>
           </ul>
-          </li>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--catalog">
-              <button class="main-nav__link main-nav__link--catalog main-nav__link--catalog-open" type="button">Каталог товаров</button>
+              <span class="main-nav__link ">Каталог товаров</span>
+              <button class="main-nav__link main-nav__link--catalog" type="button">
+                <span class="visually-hidden">Кнопка раскрытия дополнительного меню</span>
+              </button>
               <ul class="submenu main-nav__submenu">
                 <li class="submenu__item">
                   <ul class="submenu submenu-inner">
@@ -164,10 +167,10 @@
             <div class="slider__item">
               <img class="slider__img" src="img/slider-3.png" width="560" height="560" alt="Фото квадрокоптера.">
               <div class="slider__inner">
-                <p class="slider__main-text">Делай селфи, как Бен Стиллер!</p>
+                <p class="slider__main-text">Делай селфи, как&nbsp;Бен Стиллер!</p>
                 <p class="main__text slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                 <a class="slider__link" href="#">Подробнее</a>
-                <dl class="spec-list">
+                <dl class="spec-list spec-list--third-slide">
                   <div class="spec-list__wrapper">
                     <dt class="spec-list__term">8,5 м</dt>
                     <dd class="spec-list__def">Длина палки</dd>
@@ -185,14 +188,14 @@
             </div>
           </div>
           <div class="slider__buttons">
-            <button class="slider__toggle slider__toggle-left" type="button" disabled><span class="visually-hidden">Левый переключатель слайдера</span></button>
+            <button class="slider__toggle slider__toggle-left" type="button"><span class="visually-hidden">Левый переключатель слайдера</span></button>
             <button class="slider__toggle slider__toggle-right" type="button"><span class="visually-hidden">Правый переключатель слайдера</span></button>
           </div>
           <div class="slider__checkbox">
             <ul class="slider__checkbox-list">
               <li class="slider__checkbox-item">
                 <label class="visually-hidden" for="checkbox-toggle-1">Переключить на первый слайд</label>
-                <input class="slider__checkbox-toggle" type="radio" name="checkbox-toggle" id="checkbox-toggle-1" disabled>
+                <input class="slider__checkbox-toggle" type="radio" name="checkbox-toggle" id="checkbox-toggle-1" checked>
                 <span class="slider__checkbox-custom"></span>
               </li>
               <li class="slider__checkbox-item">
@@ -202,7 +205,7 @@
               </li>
               <li class="slider__checkbox-item">
                 <label class="visually-hidden" for="checkbox-toggle-3">Переключить на третий слайд</label>
-                <input class="slider__checkbox-toggle" type="radio" name="checkbox-toggle" id="checkbox-toggle-3" checked>
+                <input class="slider__checkbox-toggle" type="radio" name="checkbox-toggle" id="checkbox-toggle-3">
                 <span class="slider__checkbox-custom"></span>
               </li>
             </ul>
@@ -279,7 +282,7 @@
               <div class="info-block__item info-block__item--active">
                 <section class="info-block__inner info-block__inner--delivery">
                   <h2 class="info-block__title main__title">Доставка</h2>
-                  <p class="info-block__description main__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                  <p class="info-block__description main__text">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! Ведь <br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </section>
               </div>
               <div class="info-block__item">
@@ -327,15 +330,15 @@
             <div class="contacts__inner">
               <h4 class="contacts__title">Интернет-магазин «Девайс»</h4>
               <address class="address">
-                <p class="address__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <p class="address__text address__text--contacts">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                 <a class="address__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
               </address>
             </div>
             <div class="contacts__inner">
               <h4 class="contacts__title">Время работы</h4>
               <ul class="contacts__schedule">
-                <li class="contacts__schedule-item">пн—пт: с <time datetime="T10:00">10:00</time> до <time datetime="T22:00">22:00</time></li>
-                <li class="contacts__schedule-item">сб—вс: с <time datetime="T10:00">10:00</time> до <time datetime="T19:00">19:00</time></li>
+                <li class="contacts__schedule-item">пн—пт: с <time datetime="10:00">10:00</time> до <time datetime="22:00">22:00</time></li>
+                <li class="contacts__schedule-item">сб—вс: с <time datetime="10:00">10:00</time> до <time datetime="19:00">19:00</time></li>
               </ul>
             </div>
             <a class="information__link information__link--contacts main__interactive-elem control-element" href="#">Напишите нам</a>
@@ -346,7 +349,7 @@
         <div class="container mailing__container">
           <div class="mailing__inner">
             <h2 class="mailing__title main__title">Подпишитесь на рассылку</h2>
-            <p class="mailing__text main__text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <p class="mailing__text main__text">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
           <form class="form-mailing" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="input-mailing">Оформить подписку</label>
@@ -360,7 +363,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__inner footer__inner--address">
-          <img class="footer-logo__img main-logo__img" src="img/logo-footer.svg" width="145" height="37" alt="Логотип компании.">
+          <img class="main-logo__img" src="img/logo-footer.svg" width="145" height="37" alt="Логотип компании.">
           <address class="address">
             <p class="address__text address__text--footer">Санкт-Петербург,&nbsp;набережная реки Карповки, 5, литера П.</p>
           </address>
@@ -443,7 +446,7 @@
             </button>
           </header>
           <form class="form-modal" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="modal__wrapper">
+            <div class="modal__wrapper modal__wrapper--form modal__wrapper--first-child">
               <fieldset class="form-modal__fieldset">
                 <legend class="visually-hidden">Группа полей формы</legend>
                 <label class="form-modal__label" for="user-name">Ваше имя:</label>
@@ -457,7 +460,7 @@
                 <span class="form-modal__decor-icon form-modal__decor-icon--mail" aria-hidden="true"></span>
               </fieldset>
             </div>
-            <div class="modal__wrapper">
+            <div class="modal__wrapper modal__wrapper--form">
               <fieldset class="form-modal__fieldset">
                 <legend class="visually-hidden">Группа полей формы</legend>
                 <label class="form-modal__label" for="description">Что нужно привезти:</label>
