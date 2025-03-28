@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Device</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="fonts/rubik/rubik-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/rubik/rubik-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/raleway/raleway-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/rubik/rubik-400.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/rubik/rubik-700.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/raleway/raleway-800.woff2" as="font" type="font/woff2">
     <link rel="icon" href="favicon.ico">
   </head>
   <body class="page-body">
@@ -78,7 +78,7 @@
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--catalog">
               <span class="main-nav__link ">Каталог товаров</span>
-              <button class="main-nav__link main-nav__link--catalog main-nav__link--catalog-open" type="button">
+              <button class="main-nav__link main-nav__link--catalog" type="button">
                 <span class="visually-hidden">Кнопка раскрытия дополнительного меню</span>
               </button>
               <ul class="submenu main-nav__submenu">
@@ -132,7 +132,7 @@
       <div class="slider">
         <div class="container slider__container">
           <div class="slider__wrapper">
-            <div class="slider__item">
+            <div class="slider__item slider__item--active">
               <img class="slider__img" src="img/slider-1.png" width="560" height="560" alt="Фото квадрокоптера.">
               <div class="slider__inner">
                 <p class="slider__main-text">Порхает как бабочка, жалит как пчела!</p>
@@ -164,7 +164,7 @@
                 </dl>
               </div>
             </div>
-            <div class="slider__item slider__item--active">
+            <div class="slider__item">
               <img class="slider__img" src="img/slider-3.png" width="560" height="560" alt="Фото квадрокоптера.">
               <div class="slider__inner">
                 <p class="slider__main-text">Делай селфи, как&nbsp;Бен Стиллер!</p>
@@ -337,8 +337,8 @@
             <div class="contacts__inner">
               <h4 class="contacts__title">Время работы</h4>
               <ul class="contacts__schedule">
-                <li class="contacts__schedule-item">пн—пт: с <time>10:00</time> до <time>22:00</time></li>
-                <li class="contacts__schedule-item">сб—вс: с <time>10:00</time> до <time>19:00</time></li>
+                <li class="contacts__schedule-item">пн—пт: с <time datetime="10:00">10:00</time> до <time datetime="22:00">22:00</time></li>
+                <li class="contacts__schedule-item">сб—вс: с <time datetime="10:00">10:00</time> до <time datetime="19:00">19:00</time></li>
               </ul>
             </div>
             <a class="information__link information__link--contacts main__interactive-elem control-element" href="#">Напишите нам</a>
