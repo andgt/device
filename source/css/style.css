@@ -2349,7 +2349,7 @@
   position: relative;
   width: 920px;
   margin: auto;
-  padding: 72px 80px;
+  padding: 60px 70px 60px 70px;
   background-color: #ffffff;
   border: 10px solid #000000;
 }
@@ -2389,11 +2389,18 @@
   justify-content: space-between;
 }
 
+.modal__wrapper--form {
+  margin-bottom: 42px;
+}
+
+.modal__wrapper--first-child {
+  margin-bottom: 65px;
+}
+
 .form-modal {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  row-gap: 42px;
 }
 
 .form-modal__fieldset {
@@ -2412,7 +2419,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 
 .form-modal__label--counter::before {
@@ -2564,7 +2571,7 @@
   line-height: 18px;
   background-color: transparent;
   border: 0;
-  letter-spacing: 2px;
+  letter-spacing: 3.5px;
   cursor: pointer;
   z-index: 1;
 }
