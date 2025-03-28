@@ -834,6 +834,10 @@
   margin: 0;
 }
 
+.spec-list--third-slide {
+  column-gap: 40px;
+}
+
 .spec-list__term {
   margin-bottom: 12px;
   font-size: 36px;
