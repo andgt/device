@@ -18,7 +18,7 @@
             <img class="main-logo__img" src="img/logo.svg" width="145" height="37" alt="Логотип компании.">
           </a>
         </div>
-        <form class="search-form" action="#" method="post">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="input-search">Текст поиска</label>
           <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска">
           <button class="search-form__button" type="button">Найти</button>
@@ -159,7 +159,7 @@
         </div>
         <div class="catalog__wrapper">
           <div class="container catalog__container">
-            <form class="form-filters" action="#" method="post">
+            <form class="form-filters" action="https://echo.htmlacademy.ru" method="post">
               <h3 class="catalog__title catalog__title--filter">фильтр:</h3>
               <fieldset class="form-filters__wrapper">
                 <legend class="catalog__subtitle form-filters__title form-filters__title--price">Стоимость</legend>
@@ -209,7 +209,7 @@
                     <label class="form-filters__label" for="color-red">Красный</label>
                   </li>
                   <li class="form-filters__inner">
-                    <input class="form-filters__input" id="color-pink" name="pink" type="checkbox" disabled>
+                    <input class="form-filters__input" id="color-pink" name="pink" type="checkbox">
                     <span class="form-filters__custom-input form-filters__custom-input--checkbox"></span>
                     <label class="form-filters__label" for="color-pink">Розовый</label>
                   </li>
@@ -324,9 +324,13 @@
                       <li class="pagination__item">
                         <a class="pagination__link" href="#">3</a>
                       </li>
+                      <li class="pagination__item">
+                        <span class="pagination__link">...</span>
+                      </li>
+                      <li class="pagination__item">
+                        <a class="pagination__link" href="#">15</a>
+                      </li>
                     </ul>
-                    <span class="pagination__link">...</span>
-                    <a class="pagination__link" href="#">15</a>
                   </div>
                   <button class="pagination__button pagination__button--right" type="button">Вперёд</button>
                 </div>
@@ -362,7 +366,7 @@
               <li class="social__item">
                 <a class="social__link" href="#">
                   <span class="visually-hidden">Логотип Фейсбук</span>
-                  <svg class="social__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="social__icon" width="40" height="40" focusable="false" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
                     <path d="M22.5 14H25V11H21.6C18.8 11 18 12.7 18 15.2V17H16V20H18V29H21V20H24.3L24.9 17H21V15.5C21 14.7 21.3 14 22.5 14Z" fill="#444444"/>
                   </svg>
@@ -371,7 +375,7 @@
               <li class="social__item">
                 <a class="social__link" href="#">
                   <span class="visually-hidden">Логотип Инстаграм</span>
-                  <svg class="social__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="social__icon" width="40" height="40" focusable="false" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
                     <path d="M20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22Z" fill="#444444"/>
                     <path d="M26.7 13.3C25.8 12.4 24.7 12 23.3 12H16.7C13.9 12 12 13.9 12 16.7V23.3C12 24.7 12.4 25.9 13.4 26.7C14.3 27.6 15.4 28 16.7 28H23.3C24.7 28 25.9 27.6 26.7 26.7C27.5 25.8 28 24.7 28 23.3V16.7C28 15.3 27.6 14.1 26.7 13.3ZM20 24.1C17.8 24.1 15.9 22.3 15.9 20C15.9 17.7 17.8 15.9 20 15.9C22.2 15.9 24.1 17.7 24.1 20C24.1 22.3 22.2 24.1 20 24.1ZM24.6 16.7C23.9 16.7 23.3 16.2 23.3 15.4C23.3 14.6 23.8 14.1 24.6 14.1C25.3 14.1 25.9 14.7 25.9 15.4C25.9 16.1 25.3 16.7 24.6 16.7Z" fill="#444444"/>
@@ -381,7 +385,7 @@
               <li class="social__item">
                 <a class="social__link" href="#">
                   <span class="visually-hidden">Логотип Икс</span>
-                  <svg class="social__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="social__icon" width="40" height="40" focusable="false" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
                     <path d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z" fill="#444444"/>
                   </svg>
@@ -394,7 +398,7 @@
           <a class="footer__phone-link address__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a class="footer__dev-link" href="htmlacademy.ru">
             <span class="visually-hidden">Логотип HTML Academy</span>
-            <svg class="footer__dev-img" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer__dev-img" width="115" height="33" focusable="false" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="#FFC700"/>
               <path d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" fill="#FFC700"/>
               <path d="M26.6 4.8H21.8V1.1H19.8V4.9H17.9V6.9H19.8V12.9C19.8 14.6 20.8 15.6 22.5 15.6H26.6V13.6H22.9C22.2 13.6 21.8 13.2 21.8 12.5V6.8H26.6V4.8Z" fill="#FFC700"/>
@@ -464,5 +468,18 @@
         </div>
       </div>
     </div>
+    <!--<div style="
+      position: absolute;
+      width: 1440px;
+      height: 2082px;
+      margin: 0 auto;
+      background-image: url('img/catalog.jpg');
+      background-repeat: no-repeat;
+      opacity: 0.6;
+      left: 50%;
+      transform: translateX(-50%);
+      filter: invert(1);
+      z-index: 6;
+    "></div>-->
   </body>
 </html>
