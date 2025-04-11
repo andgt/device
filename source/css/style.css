@@ -1326,6 +1326,7 @@
 .form-mailing__input {
   width: 557px;
   padding: 11px 0 11px 17px;
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
@@ -2560,6 +2561,7 @@
 .form-modal__input {
   width: 360px;
   padding: 20px 45px 20px 20px;
+  font-family: "Rubik", 'Arial', sans-serif;
   font-size: 16px;
   line-height: 20px;
   background-color: #f0f0f0;
