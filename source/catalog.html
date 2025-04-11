@@ -416,7 +416,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay modal-overlay--active">
+    <div class="modal-overlay">
       <div class="modal">
         <div class="modal__container">
           <header class="modal__header modal__wrapper">
@@ -429,13 +429,17 @@
             <div class="modal__wrapper modal__wrapper--form modal__wrapper--first-child">
               <fieldset class="form-modal__fieldset">
                 <legend class="visually-hidden">Группа полей формы</legend>
-                <label class="form-modal__label" for="user-name">Ваше имя:</label>
+                <label class="form-modal__label" for="user-name">
+                  <span>Ваше имя:</span>
+                </label>
                 <input class="form-modal__input" type="text" name="user-name" id="user-name" placeholder="Введите имя" required>
                 <span class="form-modal__decor-icon form-modal__decor-icon--name" aria-hidden="true"></span>
               </fieldset>
               <fieldset class="form-modal__fieldset">
                 <legend class="visually-hidden">Группа полей формы</legend>
-                <label class="form-modal__label" for="useremail">Ваш e-mail:</label>
+                <label class="form-modal__label" for="useremail">
+                  <span>Ваш e-mail:</span>
+                </label>
                 <input class="form-modal__input" type="email" pattern="^\S+@\S+\.\S+$" name="user-email" id="useremail" placeholder="Введите e-mail" disabled>
                 <span class="form-modal__decor-icon form-modal__decor-icon--mail" aria-hidden="true"></span>
               </fieldset>
@@ -443,10 +447,12 @@
             <div class="modal__wrapper modal__wrapper--form">
               <fieldset class="form-modal__fieldset">
                 <legend class="visually-hidden">Группа полей формы</legend>
-                <label class="form-modal__label" for="description">Что нужно привезти:</label>
-                <input class="form-modal__input" type="text" name="description" id="description" placeholder="В свободной форме" required>
+                <label class="form-modal__label" for="description">
+                  <span>Что нужно привезти:</span>
+                </label>
+                <input class="form-modal__input form-modal__input--delivery" type="text" name="description" id="description" placeholder="В свободной форме" required>
               </fieldset>
-              <fieldset class="form-modal__fieldset">
+              <fieldset class="form-modal__fieldset form-modal__fieldset--counter">
                 <legend class="visually-hidden">Группа полей формы</legend>
                 <div class="form-modal__inner">
                   <label class="form-modal__label" for="input-counter">
