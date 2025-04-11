@@ -38,7 +38,7 @@
                   <li class="popover__card-item">
                     <a class="popover__product-link" href="#">
                       <img class="popover__img" src="img/popover-product-1.jpg" width="39" height="43" alt="Изображение любительской селфи-палки.">
-                      <h3 class="popover__text popover__text--title">Любительская селфи-палка</h3>
+                      <p class="popover__text popover__text--title">Любительская селфи-палка</p>
                     </a>
                     <button class="popover__remove-btn" type="button">
                       <span class="visually-hidden">Кнопка для удаления товара</span>
@@ -47,7 +47,7 @@
                   <li class="popover__card-item">
                     <a class="popover__product-link" href="#">
                       <img class="popover__img" src="img/popover-product-2.jpg" width="39" height="43" alt="Изображение профессиональной селфи-палки.">
-                      <h3 class="popover__text popover__text--title">Профессиональная селфи-палка</h3>
+                      <p class="popover__text popover__text--title">Профессиональная селфи-палка</p>
                     </a>
                     <button class="popover__remove-btn" type="button">
                       <span class="visually-hidden">Кнопка для удаления товара</span>
@@ -416,7 +416,7 @@
         </div>
         <div class="footer__inner footer__inner--contacts">
           <a class="footer__phone-link address__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-          <a class="footer__dev-link" href="htmlacademy.ru">
+          <a class="footer__dev-link" href="https://htmlacademy.ru/profession/frontender/individual">
             <span class="visually-hidden">Логотип HTML Academy</span>
             <svg class="footer__dev-img" width="115" height="33" focusable="false" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="#FFC700"/>
@@ -449,13 +449,17 @@
             <div class="modal__wrapper modal__wrapper--form modal__wrapper--first-child">
               <fieldset class="form-modal__fieldset">
                 <legend class="visually-hidden">Группа полей формы</legend>
-                <label class="form-modal__label" for="user-name">Ваше имя:</label>
+                <label class="form-modal__label" for="user-name">
+                  <span>Ваше имя:</span>
+                </label>
                 <input class="form-modal__input" type="text" name="user-name" id="user-name" placeholder="Введите имя" required>
                 <span class="form-modal__decor-icon form-modal__decor-icon--name" aria-hidden="true"></span>
               </fieldset>
               <fieldset class="form-modal__fieldset">
                 <legend class="visually-hidden">Группа полей формы</legend>
-                <label class="form-modal__label" for="useremail">Ваш e-mail:</label>
+                <label class="form-modal__label" for="useremail">
+                  <span>Ваш e-mail:</span>
+                </label>
                 <input class="form-modal__input" type="email" pattern="^\S+@\S+\.\S+$" name="user-email" id="useremail" placeholder="Введите e-mail" disabled>
                 <span class="form-modal__decor-icon form-modal__decor-icon--mail" aria-hidden="true"></span>
               </fieldset>
@@ -463,15 +467,22 @@
             <div class="modal__wrapper modal__wrapper--form">
               <fieldset class="form-modal__fieldset">
                 <legend class="visually-hidden">Группа полей формы</legend>
-                <label class="form-modal__label" for="description">Что нужно привезти:</label>
-                <input class="form-modal__input" type="text" name="description" id="description" placeholder="В свободной форме" required>
-              </fieldset>
-              <fieldset class="form-modal__fieldset">
-                <legend class="visually-hidden">Группа полей формы</legend>
-                <label class="form-modal__label form-modal__label--counter" for="input-counter">
-                  <span>Количество:</span>
-                  <span class="form-modal__tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к&nbsp;провозу багажа.</span>
+                <label class="form-modal__label" for="description">
+                  <span>Что нужно привезти:</span>
                 </label>
+                <input class="form-modal__input form-modal__input--delivery" type="text" name="description" id="description" placeholder="В свободной форме" required>
+              </fieldset>
+              <fieldset class="form-modal__fieldset form-modal__fieldset--counter">
+                <legend class="visually-hidden">Группа полей формы</legend>
+                <div class="form-modal__inner">
+                  <label class="form-modal__label" for="input-counter">
+                    <span>Количество:</span>
+                  </label>
+                  <button class="form-modal__tooltip" type="button">
+                    <span class="visually-hidden">Кнопка открытия подсказки</span>
+                  </button>
+                  <span class="form-modal__tooltip-info">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к&nbsp;провозу багажа.</span>
+                </div>
                 <div class="form-modal__inner-counter">
                   <button class="form-modal__btn-counter form-modal__btn-counter--decrease" type="button">
                     <span class="visually-hidden">Уменьшить количество на 1</span>

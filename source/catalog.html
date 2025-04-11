@@ -396,7 +396,7 @@
         </div>
         <div class="footer__inner footer__inner--contacts">
           <a class="footer__phone-link address__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-          <a class="footer__dev-link" href="htmlacademy.ru">
+          <a class="footer__dev-link" href="https://htmlacademy.ru/profession/frontender/individual">
             <span class="visually-hidden">Логотип HTML Academy</span>
             <svg class="footer__dev-img" width="115" height="33" focusable="false" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="#FFC700"/>
@@ -416,7 +416,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay modal-overlay--active">
       <div class="modal">
         <div class="modal__container">
           <header class="modal__header modal__wrapper">
@@ -448,10 +448,15 @@
               </fieldset>
               <fieldset class="form-modal__fieldset">
                 <legend class="visually-hidden">Группа полей формы</legend>
-                <label class="form-modal__label form-modal__label--counter" for="input-counter">
-                  <span>Количество:</span>
-                  <span class="form-modal__tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к&nbsp;провозу багажа.</span>
-                </label>
+                <div class="form-modal__inner">
+                  <label class="form-modal__label" for="input-counter">
+                    <span>Количество:</span>
+                  </label>
+                  <button class="form-modal__tooltip" type="button">
+                    <span class="visually-hidden">Кнопка открытия подсказки</span>
+                  </button>
+                  <span class="form-modal__tooltip-info">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к&nbsp;провозу багажа.</span>
+                </div>
                 <div class="form-modal__inner-counter">
                   <button class="form-modal__btn-counter form-modal__btn-counter--decrease" type="button">
                     <span class="visually-hidden">Уменьшить количество на 1</span>
