@@ -31,7 +31,7 @@
             <li class="top-menu__item top-menu__item--cart">
               <button class="top-menu__link top-menu__link--cart" type="button">
                 <span class="top-menu__cart-counter">2</span>
-                <span>Корзина</span>
+                <span class="top-menu__cart">Корзина</span>
               </button>
               <div class="popover">
                 <ul class="popover__card-list">
@@ -460,14 +460,14 @@
                 <label class="form-modal__label" for="useremail">
                   <span>Ваш e-mail:</span>
                 </label>
-                <input class="form-modal__input" type="email" pattern="^\S+@\S+\.\S+$" name="user-email" id="useremail" placeholder="Введите e-mail" disabled>
+                <input class="form-modal__input" type="email" pattern="^\S+@\S+\.\S+$" name="user-email" id="useremail" placeholder="Введите e-mail">
                 <span class="form-modal__decor-icon form-modal__decor-icon--mail" aria-hidden="true"></span>
               </fieldset>
             </div>
             <div class="modal__wrapper modal__wrapper--form">
               <fieldset class="form-modal__fieldset">
                 <legend class="visually-hidden">Группа полей формы</legend>
-                <label class="form-modal__label" for="description">
+                <label class="form-modal__label form-modal__label--delivery" for="description">
                   <span>Что нужно привезти:</span>
                 </label>
                 <input class="form-modal__input form-modal__input--delivery" type="text" name="description" id="description" placeholder="В свободной форме" required>
