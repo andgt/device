@@ -9,6 +9,7 @@
     <link rel="preload" href="fonts/rubik/rubik-700.woff2" as="font" type="font/woff2">
     <link rel="preload" href="fonts/raleway/raleway-800.woff2" as="font" type="font/woff2">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   </head>
   <body class="page-body">
     <header class="page-header page-header--catalog">
@@ -18,10 +19,10 @@
             <img class="main-logo__img" src="img/logo.svg" width="145" height="37" alt="Логотип компании.">
           </a>
         </div>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <label class="search-form__label" for="input-search" aria-label="Текст поиска"></label>
-          <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска">
-          <button class="search-form__button" type="button">Найти</button>
+          <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска" required>
+          <button class="search-form__button" type="submit">Найти</button>
         </form>
         <div class="page-header__inner page-header__inner--catalog">
           <ul class="user-menu__list">
@@ -159,7 +160,7 @@
         </div>
         <div class="catalog__wrapper">
           <div class="container catalog__container">
-            <form class="form-filters" action="https://echo.htmlacademy.ru" method="post">
+            <form class="form-filters" action="https://echo.htmlacademy.ru" method="get">
               <h3 class="catalog__title catalog__title--filter">фильтр:</h3>
               <fieldset class="form-filters__wrapper">
                 <legend class="catalog__subtitle form-filters__title form-filters__title--price">Стоимость</legend>
@@ -175,12 +176,12 @@
                   </div>
                   <div class="range-slider__toggle range-slider__toggle--min">
                     <label class="range-slider__label" for="min-price">От
-                      <input class="range-slider__min-price range-slider__price" id="min-price" type="number" name="min-price" value="0" min="0" max="5000" placeholder="0">
+                      <input class="range-slider__min-price range-slider__price" id="min-price" type="number" name="min-price" value="0" min="0" placeholder="0">
                     </label>
                   </div>
                   <div class="range-slider__toggle range-slider__toggle--max">
                     <label class="range-slider__label" for="max-price">До
-                      <input class="range-slider__max-price range-slider__price" id="max-price" type="number" name="max-price" value="5000" min="0" max="5000" placeholder="5000">
+                      <input class="range-slider__max-price range-slider__price" id="max-price" type="number" name="max-price" value="5000" min="0" placeholder="5000">
                     </label>
                   </div>
                 </div>
@@ -220,12 +221,12 @@
                 <div class="form-filters__wrapper-radio">
                   <div class="form-filters__inner">
                     <label class="form-filters__label" for="bluetooth-true">Есть</label>
-                    <input class="form-filters__input form-filters__input--radio" id="bluetooth-true" name="black" type="radio" checked>
+                    <input class="form-filters__input form-filters__input--radio" id="bluetooth-true" value="yes" name="bluetooth" type="radio" checked>
                     <span class="form-filters__custom-input form-filters__custom-input--radio"></span>
                   </div>
                   <div class="form-filters__inner">
                     <label class="form-filters__label" for="bluetooth-false">Нет</label>
-                    <input class="form-filters__input form-filters__input--radio" id="bluetooth-false" name="black" type="radio">
+                    <input class="form-filters__input form-filters__input--radio" id="bluetooth-false" value="no" name="bluetooth" type="radio">
                     <span class="form-filters__custom-input form-filters__custom-input--radio"></span>
                   </div>
                 </div>
@@ -425,7 +426,7 @@
               <span class="visually-hidden">Кнопка закрытия модального окна</span>
             </button>
           </header>
-          <form class="form-modal" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="form-modal" action="https://echo.htmlacademy.ru/" method="get">
             <div class="modal__wrapper modal__wrapper--form modal__wrapper--first-child">
               <fieldset class="form-modal__fieldset">
                 <legend class="visually-hidden">Группа полей формы</legend>

@@ -9,6 +9,7 @@
     <link rel="preload" href="fonts/rubik/rubik-700.woff2" as="font" type="font/woff2">
     <link rel="preload" href="fonts/raleway/raleway-800.woff2" as="font" type="font/woff2">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -16,10 +17,10 @@
         <div class="main-logo">
           <img class="main-logo__img" src="img/logo.svg" width="145" height="37" alt="Логотип компании.">
         </div>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <label class="search-form__label" for="input-search" aria-label="Текст поиска"></label>
-          <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска">
-          <button class="search-form__button" type="button">Найти</button>
+          <input class="search-form__input" id="input-search" type="search" name="search" placeholder="Текст поиска" required>
+          <button class="search-form__button" type="submit">Найти</button>
         </form>
         <div class="page-header__inner">
           <a class="top-menu__link top-menu__link--login" href="#">Войти</a>
@@ -352,8 +353,8 @@
           </div>
           <form class="form-mailing" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="input-mailing">Оформить подписку</label>
-            <input class="form-mailing__input" id="input-mailing" type="text" name="mailing" placeholder="Ваш e-mail">
-            <button class="form-mailing__button main__interactive-elem main__button" type="button">Подписаться</button>
+            <input class="form-mailing__input" id="input-mailing" type="email" name="mailing" placeholder="Ваш e-mail" required>
+            <button class="form-mailing__button main__interactive-elem main__button" type="submit">Подписаться</button>
             <span class="form-mailing__add-info main__text">Это бесплатно</span>
           </form>
         </div>
